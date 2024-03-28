@@ -1,7 +1,6 @@
 PROJECT := tensor
 VERSION := 0.1.0
 
-VENV := .venv
 REPORTS := .reports
 
 TESTS := tests

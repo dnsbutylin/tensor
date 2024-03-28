@@ -93,31 +93,6 @@ class Button(BaseWebElement):
             return self._element.click()
 
 
-class Input(BaseWebElement):
-    """
-    Базовый класс инпут"""
-
-    def enter_text(self, value: str) -> None:
-        """
-        Ввод текста в input
-        :param value: Текст вводимый в input
-        """
-        with step(f"В  поле ({self.name})  ввести значение ({value})"):
-            self._element.send_keys(value)
-
-    def get_input(self) -> WebElement:
-        """Возвращает элемент"""
-        return self._element
-
-    def clear(self) -> None:
-        """Чистка поля"""
-        return self._element.clear()
-
-    def click(self) -> None:
-        """Клик по инпуту"""
-        return self._element.click()
-
-
 class Text(BaseWebElement):
     """Базовый класс текст"""
 

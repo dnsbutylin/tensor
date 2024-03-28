@@ -29,12 +29,6 @@ class BasePage:
         self.driver.get(url)
         return self
 
-    def clear_session(self) -> None:
-        """Очистка сессии, куков, localStorage и обновление страницы"""
-        self.driver.execute_script("sessionStorage.clear();")
-        self.driver.execute_script("localStorage.clear();")
-        self.driver.delete_all_cookies()
-        self.driver.refresh()
 
     def element_is_exist(self, locator: str, raises: bool = False) -> bool:
         """Проверить что эелемент виден на странице"""
