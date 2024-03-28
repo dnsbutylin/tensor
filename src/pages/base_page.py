@@ -29,7 +29,6 @@ class BasePage:
         self.driver.get(url)
         return self
 
-
     def element_is_exist(self, locator: str, raises: bool = False) -> bool:
         """Проверить что эелемент виден на странице"""
         try:

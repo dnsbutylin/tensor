@@ -5,7 +5,6 @@ from selenium.webdriver import ActionChains, Remote
 from selenium.webdriver.remote.webelement import By, WebElement
 from selenium.webdriver.support import expected_conditions as ec
 
-from src.cases import step
 from src.elements.utils import WebWait
 
 
